@@ -27,9 +27,9 @@ class Game(object):
         this = javascript.this()
         # this.load.setBaseURL = 'http://labs.phaser.io/'  
 
-        this.load.image('sky', 'assets/yuda-background2.jpg')
+        this.load.image('sky', 'assets/space3.png')
         this.load.image('logo', 'assets/logo.svg')
-        this.load.image('red', 'assets/logo.svg')
+        this.load.image('red', 'assets/red.png')
 
     def create(self, *args):
         this = javascript.this()
