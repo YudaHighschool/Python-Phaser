@@ -55,8 +55,8 @@ GAME = Game()
 
 def display_keyCode(ev):
     print("keyCode = ", ev.keyCode)
-    if ev.keyCode == 81:  # q or Q
-        doc.unbind("keydown")
-    ev.preventDefault()
+    # if ev.keyCode == 81:  # q or Q
+    #     doc.unbind("keydown")
+    # ev.preventDefault()
 
 doc.bind("keydown", display_keyCode)
