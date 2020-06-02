@@ -37,7 +37,7 @@ class Game(object):
 
         particles = this.add.particles('red')
         emitter = particles.createEmitter({
-            'speed': 100,
+            'speed': 1000,
             'scale': {'start': 1, 'end': 0},
             'blendMode': 'NORMAL'
         })
