@@ -44,7 +44,7 @@ class Game(object):
 
         logo = this.physics.add.image(400, 100, 'logo')
 
-        logo.setVelocity(200, 100)
+        logo.setVelocity(100, 200)
         logo.setBounce(1, 1)
         logo.setCollideWorldBounds(True)
 
