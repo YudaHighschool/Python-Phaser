@@ -27,7 +27,7 @@ class Game(object):
         this = javascript.this()
         this.load.setBaseURL = 'http://labs.phaser.io'  
 
-        this.load.image('sky', 'assets/skies/space3.png')
+        this.load.image('sky', 'https://images.unsplash.com/photo-1474573892045-721452c3d98c?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=8a1c8e04786fad38cae94ee48ce372e7')
         this.load.image('logo', 'assets/sprites/phaser3-logo.png')
         this.load.image('red', 'assets/particles/red.png')
 
