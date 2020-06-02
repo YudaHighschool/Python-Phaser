@@ -33,7 +33,7 @@ class Game(object):
 
     def create(self, *args):
         this = javascript.this()
-        this.add.image(800, 252, 'sky')
+        this.add.image(400, 300, 'sky')
 
         particles = this.add.particles('red')
         emitter = particles.createEmitter({
