@@ -28,7 +28,7 @@ class Game(object):
         this.load.setBaseURL = 'http://labs.phaser.io'  
 
         this.load.image('sky', 'https://ydweb.yuda.tyc.edu.tw/page/BBP/BBP_Upload/438/17263/lg_item01_20200227110347.jpg')
-        this.load.image('logo', 'https://yd-main.web.app/assets/image/icons/logo.svg')
+        this.load.image('logo', 'https://yd-main.web.app/assets/favicon/android-chrome-192x192.png')
         this.load.image('red', 'assets/particles/red.png')
 
     def create(self, *args):
