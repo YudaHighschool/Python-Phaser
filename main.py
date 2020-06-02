@@ -37,14 +37,14 @@ class Game(object):
 
         particles = this.add.particles('red')
         emitter = particles.createEmitter({
-            'speed': 1000,
+            'speed': 100,
             'scale': {'start': 1, 'end': 0},
             'blendMode': 'NORMAL'
         })
 
         logo = this.physics.add.image(400, 100, 'logo')
 
-        logo.setVelocity(100, 200)
+        logo.setVelocity(1000, 2000)
         logo.setBounce(1, 1)
         logo.setCollideWorldBounds(True)
 
