@@ -1,0 +1,35 @@
+
+*{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 1.1em;
+}
+
+table {
+    width:100%;
+    max-width: 600px;
+}
+tr {
+    height: 100px;
+}
+table, td, th {
+    border: 5px solid white;
+}
+
+td{
+    color: black;
+    padding: 30px 30px 30px 30px;
+    border-radius: 1em;
+    text-align: center;
+    cursor: default;
+}
+
+#box1 { background-color: #99FFCC; }
+#box2 { background-color: #CCCC99	; }
+#box3 { background-color: #CCCCCC; }
+#box4 { background-color: #CCCCFF; }
+#box5 { background-color: #CCFF99; }
+#box6 { background-color: #CCFFCC; }
+#box7 { background-color: #CCFFFF; }
+#box8 { background-color: #FFCC99; }
+#box9 { background-color: #FFCCCC; }
