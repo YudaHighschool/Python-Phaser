@@ -59,4 +59,4 @@ def display_keyCode(ev):
     #     doc.unbind("keydown")
     # ev.preventDefault()
 
-doc.bind("keydown", display_keyCode)
+document.bind("keydown", display_keyCode)
