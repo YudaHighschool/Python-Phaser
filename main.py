@@ -1,15 +1,27 @@
-from browser import window, document
+from browser import window, document, html
 import javascript
+
+# 設定 Python 執行結果的容器　
+container = document['python']  # 　Python 執行結果　<div id="python"></div>
+for c in "w3-margin-top w3-margin".split(' '):  # 設定基本版型
+    container.classList.add(c)
+container.style = {"width": "800px"}
+container <= html.DIV(html.H2('Phaser 遊戲設計'),  Class="w3-container w3-blue")
+
+phaserContainer = html.DIV(id="phaser")
+container <= phaserContainer
 
 Phaser = window.Phaser
 
+
 class Game(object):
     def __init__(self):
-        self.game = window.Phaser.Game.new(
+        self.game = Phaser.Game.new(
             {
                 'type': Phaser.AUTO,
                 'width': 800,
-                'height': 600,
+                'height': 400,
+                'parent': 'phaser',
                 'physics': {
                     'default': 'arcade',
                     'arcade': {
@@ -25,7 +37,7 @@ class Game(object):
 
     def preload(self, *args):
         this = javascript.this()
-        # this.load.setBaseURL = 'http://labs.phaser.io/'  
+        # this.load.setBaseURL = 'http://labs.phaser.io/'
 
         this.load.image('sky', 'assets/space3.png')
         this.load.image('logo', 'assets/logo.svg')
@@ -53,10 +65,12 @@ class Game(object):
 
 GAME = Game()
 
+
 def display_keyCode(ev):
     print("keyCode = ", ev.keyCode)
     # if ev.keyCode == 81:  # q or Q
     #     doc.unbind("keydown")
     # ev.preventDefault()
+
 
 document.bind("keydown", display_keyCode)
